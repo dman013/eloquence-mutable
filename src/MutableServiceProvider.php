@@ -1,8 +1,8 @@
 <?php
 
-namespace Sofa\Eloquence;
+namespace Dmn013\Eloquence;
 
-use Sofa\Eloquence\Mutator\Mutator;
+use Dmn013\Eloquence\Mutator\Mutator;
 use Illuminate\Support\ServiceProvider as BaseProvider;
 
 /**
@@ -32,7 +32,7 @@ class MutableServiceProvider extends BaseProvider
             return new Mutator;
         });
 
-        $this->app->alias('eloquence.mutator', 'Sofa\Eloquence\Contracts\Mutator');
+        $this->app->alias('eloquence.mutator', 'Dmn013\Eloquence\Contracts\Mutator');
     }
 
     /**

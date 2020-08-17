@@ -1,10 +1,10 @@
 <?php
 
-namespace Sofa\Eloquence;
+namespace Dmn013\Eloquence;
 
-use Sofa\Eloquence\Mutable\Hooks;
-use Sofa\Eloquence\Mutator\Mutator;
-use Sofa\Eloquence\Contracts\Mutator as MutatorContract;
+use Dmn013\Eloquence\Mutable\Hooks;
+use Dmn013\Eloquence\Mutator\Mutator;
+use Dmn013\Eloquence\Contracts\Mutator as MutatorContract;
 
 /**
  * @property array $setterMutators
@@ -15,7 +15,7 @@ trait Mutable
     /**
      * Attribute mutator instance.
      *
-     * @var \Sofa\Eloquence\Contracts\Mutator
+     * @var \Dmn013\Eloquence\Contracts\Mutator
      */
     protected static $attributeMutator;
 
@@ -126,7 +126,7 @@ trait Mutable
      *
      * @codeCoverageIgnore
      *
-     * @param  \Sofa\Eloquence\Contracts\Mutator $mutator
+     * @param  \Dmn013\Eloquence\Contracts\Mutator $mutator
      * @return void
      */
     public static function setAttributeMutator(MutatorContract $mutator)
@@ -139,7 +139,7 @@ trait Mutable
      *
      * @codeCoverageIgnore
      *
-     * @return \Sofa\Eloquence\Contracts\Mutator
+     * @return \Dmn013\Eloquence\Contracts\Mutator
      */
     public static function getAttributeMutator()
     {

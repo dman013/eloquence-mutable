@@ -1,8 +1,8 @@
 <?php
 
-namespace Sofa\Eloquence\Tests;
+namespace Dmn013\Eloquence\Tests;
 
-use Sofa\Eloquence\Mutator\Mutator;
+use Dmn013\Eloquence\Mutator\Mutator;
 
 class MutatorTest extends \PHPUnit_Framework_TestCase {
 
@@ -30,7 +30,7 @@ class MutatorTest extends \PHPUnit_Framework_TestCase {
     /** @test */
     public function it_accepts_other_class_static_method()
     {
-        $callable = 'Sofa\Eloquence\Tests\MutatorDummyInstantiable@multiply';
+        $callable = 'Dmn013\Eloquence\Tests\MutatorDummyInstantiable@multiply';
 
         $this->assertEquals(4, $this->m->mutate(2, $callable));
     }
@@ -38,7 +38,7 @@ class MutatorTest extends \PHPUnit_Framework_TestCase {
     /** @test */
     public function it_accepts_other_class_instance_method()
     {
-        $callable = 'Sofa\Eloquence\Tests\MutatorDummyInstantiable@divide';
+        $callable = 'Dmn013\Eloquence\Tests\MutatorDummyInstantiable@divide';
 
         $this->assertEquals(5, $this->m->mutate(10, $callable));
     }
@@ -66,7 +66,7 @@ class MutatorTest extends \PHPUnit_Framework_TestCase {
             'substr:5,10', // ' red fox'
             'strtoupper',  // ' RED FOX'
             'clip:4',      // ' RED '
-            'Sofa\Eloquence\Tests\MutatorDummyInstantiable@repeat:3',
+            'Dmn013\Eloquence\Tests\MutatorDummyInstantiable@repeat:3',
         ];
 
         $this->assertEquals(' RED RED RED', $this->m->mutate('quick red fox', $callable));
@@ -103,9 +103,9 @@ class MutatorTest extends \PHPUnit_Framework_TestCase {
             ['jibberrish!@#$%^&*('],
             ['StdClass@jibberrish'],
             ['wrong_function'],
-            ['Sofa\Eloquence\Tests\MutatorDummyNotInstantiable@repeat:3'],
-            ['Sofa\Eloquence\Tests\MutatorDummyRequiredArgs@repeat:3'],
-            ['Sofa\Eloquence\Tests\MutatorDummyInstantiable@protectedMethod'],
+            ['Dmn013\Eloquence\Tests\MutatorDummyNotInstantiable@repeat:3'],
+            ['Dmn013\Eloquence\Tests\MutatorDummyRequiredArgs@repeat:3'],
+            ['Dmn013\Eloquence\Tests\MutatorDummyInstantiable@protectedMethod'],
         ];
     }
 }

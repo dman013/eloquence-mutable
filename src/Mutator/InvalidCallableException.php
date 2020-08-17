@@ -1,6 +1,6 @@
 <?php
 
-namespace Sofa\Eloquence\Mutator;
+namespace Dmn013\Eloquence\Mutator;
 
 class InvalidCallableException extends \LogicException
 {

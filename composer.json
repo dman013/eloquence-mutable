@@ -1,5 +1,5 @@
 {
-    "name": "sofa/eloquence-mutable",
+    "name": "dmn013/eloquence-mutable",
     "description": "Flexible Searchable, Mappable, Metable, Validation and more extensions for Laravel Eloquent ORM.",
     "license": "MIT",
     "support": {
@@ -17,14 +17,14 @@
     "authors": [
         {
             "name": "Jarek Tkaczyk",
-            "email": "jarek@softonsofa.com",
-            "homepage": "https://softonsofa.com/",
+            "email": "jarek@softondmn013.com",
+            "homepage": "https://softondmn013.com/",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=7.0.0",
-        "sofa/eloquence-base": "^5.5|^6.0"
+        "php": ">=7.3.0",
+        "dmn013/eloquence-base": "^5.5|^6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "4.5.0",
@@ -33,18 +33,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Sofa\\Eloquence\\": "src"
+            "Dmn013\\Eloquence\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sofa\\Eloquence\\Tests\\": "tests"
+            "Dmn013\\Eloquence\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Sofa\\Eloquence\\MutableServiceProvider"
+                "Dmn013\\Eloquence\\MutableServiceProvider"
             ]
         }
     },
